@@ -1,5 +1,8 @@
 import 'package:diltravel/pages/get_start.dart';
+import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/splash.dart';
+import 'package:diltravel/pages/success_checkout.dart';
+import 'package:diltravel/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MainApp());
@@ -14,9 +17,16 @@ class MainApp extends StatefulWidget {
 class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home: Scaffold(
-      body: Splash(),
-    ));
+    return MaterialApp(
+      // home: Scaffold(
+      //   body: Splash(),
+      // ),
+      initialRoute: DilTravelRoute.splash,
+      routes: {
+        DilTravelRoute.splash: (context) => const Splash(),
+        DilTravelRoute.home: (context) => const HomePage(),
+        DilTravelRoute.success: (context) => const SuccessCheckout(),
+      },
+    );
   }
 }
