@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:diltravel/pages/get_start.dart';
+import 'package:diltravel/pages/get_start_page.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:flutter/material.dart';
 

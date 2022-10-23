@@ -14,9 +14,17 @@ final TextStyle subText = GoogleFonts.poppins(
   fontWeight: FontWeight.w400,
 );
 
+
 final TextStyle descText = GoogleFonts.poppins(
   color: ColorDilTravel.grey,
   fontWeight: FontWeight.w300,
+);
+final TextStyle cardText = GoogleFonts.poppins(
+  color: ColorDilTravel.white,
+  fontWeight: FontWeight.w400,
+); final TextStyle cardText500 = GoogleFonts.poppins(
+  color: ColorDilTravel.white,
+  fontWeight: FontWeight.w500,
 );
 
 final TextStyle buttonText = GoogleFonts.poppins(

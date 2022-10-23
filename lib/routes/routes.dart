@@ -5,4 +5,5 @@ class DilTravelRoute {
   static String signup = "$root/signup";
   static String home = "$root/home";
   static String success = "$root/success";
+  static String bonus = "$root/bonus";
 }

@@ -29,30 +29,25 @@ class SignupPage extends StatelessWidget {
                         "Join us and get\nyour next journey",
                         style: tittleText.copyWith(fontSize: 24.0),
                       ),
-                      FormDefault(),
-                      FormDefault(),
-                      FormDefault(),
-                      FormDefault(),
-                      const SizedBox(
-                        height: 40.0,
-                      ),
+                      FormDefault(text: "Full Name"),
+                      FormDefault(text: "Email Address"),
+                      FormDefault(text: "Password"),
+                      FormDefault(text: "Hoby"),
+                      const SizedBox(height: 40.0),
                       Center(
                         child: Column(
                           children: [
-                            ButtonDefault(
-                              text: "Get Started",
-                            ),
-                            const SizedBox(
-                              height: 70.0,
-                            ),
+                            ButtonDefault(text: "Get Started"),
+                            const SizedBox(height: 50.0),
                             TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "Terms and Conditions",
-                                  style: descText.copyWith(
-                                    fontSize: 18.0,
-                                  ),
-                                ))
+                              onPressed: () {},
+                              child: Text(
+                                "Terms and Conditions",
+                                style: descText.copyWith(
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),

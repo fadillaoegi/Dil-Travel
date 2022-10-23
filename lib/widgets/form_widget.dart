@@ -1,9 +1,14 @@
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class FormDefault extends StatelessWidget {
-  const FormDefault({Key? key}) : super(key: key);
+  FormDefault({
+    Key? key,
+    this.text,
+  }) : super(key: key);
+  String? text;
 
   @override
   Widget build(BuildContext context) {
@@ -14,19 +19,22 @@ class FormDefault extends StatelessWidget {
           height: 20.0,
         ),
         Text(
-          "Full Name",
+          text!,
           style: subText.copyWith(
             fontSize: 14.0,
           ),
         ),
+        const SizedBox(
+          height: 10.0,
+        ),
         TextFormField(
-          decoration: const InputDecoration(
+          decoration: InputDecoration(
             border: OutlineInputBorder(
-              borderSide: BorderSide(
-                color: ColorDilTravel.black,
-                width: 5.0,
-              ),
-            ),
+                borderSide: const BorderSide(
+                  color: ColorDilTravel.black,
+                  width: 5.0,
+                ),
+                borderRadius: BorderRadius.circular(20.0)),
           ),
         ),
       ],
