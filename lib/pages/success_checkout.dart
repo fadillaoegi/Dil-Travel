@@ -1,4 +1,4 @@
-import 'package:diltravel/styles/style.dart';
+import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,9 @@ class SuccessCheckout extends StatelessWidget {
               const SizedBox(
                 height: 50.0,
               ),
-              const ButtonDefault()
+              ButtonDefault(
+                text: "My Bookings",
+              )
             ],
           ),
         ),

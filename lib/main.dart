@@ -1,5 +1,6 @@
 import 'package:diltravel/pages/get_start.dart';
 import 'package:diltravel/pages/home_page.dart';
+import 'package:diltravel/pages/signup_page.dart';
 import 'package:diltravel/pages/splash.dart';
 import 'package:diltravel/pages/success_checkout.dart';
 import 'package:diltravel/routes/routes.dart';
@@ -21,11 +22,12 @@ class _MainAppState extends State<MainApp> {
       // home: Scaffold(
       //   body: Splash(),
       // ),
-      initialRoute: DilTravelRoute.splash,
+      initialRoute: DilTravelRoute.signup,
       routes: {
         DilTravelRoute.splash: (context) => const Splash(),
         DilTravelRoute.home: (context) => const HomePage(),
         DilTravelRoute.success: (context) => const SuccessCheckout(),
+        DilTravelRoute.signup: (context) => const SignupPage(),
       },
     );
   }

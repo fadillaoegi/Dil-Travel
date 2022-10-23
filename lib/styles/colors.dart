@@ -6,4 +6,5 @@ class ColorDilTravel {
   static const red = Color(0xffEB70A5);
   static const black = Color(0xff1F1449);
   static const grey = Color(0xff9698A9);
+  static const white = Color(0xffFFFFFF);
 }
