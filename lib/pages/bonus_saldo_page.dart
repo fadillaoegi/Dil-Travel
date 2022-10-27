@@ -18,8 +18,17 @@ class BonusPage extends StatelessWidget {
               height: 211.0,
               width: 340,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: const Color(0xff341f97)),
+                image: const DecorationImage(
+                    image: AssetImage("assets/img/cardbg.png")),
+                borderRadius: BorderRadius.circular(30.0),
+                // color: const Color(0xff341f97),
+                boxShadow: [
+                  BoxShadow(
+                      color: ColorDilTravel.black.withOpacity(0.7),
+                      offset: const Offset(0, 10),
+                      blurRadius: 50),
+                ],
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(28.0),
                 child: Column(

@@ -16,20 +16,22 @@ class MainApp extends StatefulWidget {
   State<MainApp> createState() => _MainAppState();
 }
 
-class _MainAppState extends State<MainApp> {
+class _MainAppState extends State<MainApp>{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       // home: Scaffold(
       //   body: Splash(),
       // ),
       initialRoute: DilTravelRoute.bonus,
       routes: {
         DilTravelRoute.splash: (context) => const Splash(),
+        DilTravelRoute.getstart: (context) => const GetStart(),
         DilTravelRoute.home: (context) => const HomePage(),
         DilTravelRoute.success: (context) => const SuccessCheckout(),
         DilTravelRoute.signup: (context) => const SignupPage(),
-        DilTravelRoute.bonus:(context) => const BonusPage()
+        DilTravelRoute.bonus: (context) => const BonusPage(),
       },
     );
   }

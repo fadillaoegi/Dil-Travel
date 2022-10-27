@@ -8,13 +8,10 @@ final TextStyle tittleText = GoogleFonts.poppins(
   color: ColorDilTravel.black,
   fontWeight: FontWeight.w500,
 );
-
 final TextStyle subText = GoogleFonts.poppins(
   color: ColorDilTravel.black,
   fontWeight: FontWeight.w400,
 );
-
-
 final TextStyle descText = GoogleFonts.poppins(
   color: ColorDilTravel.grey,
   fontWeight: FontWeight.w300,
@@ -22,11 +19,11 @@ final TextStyle descText = GoogleFonts.poppins(
 final TextStyle cardText = GoogleFonts.poppins(
   color: ColorDilTravel.white,
   fontWeight: FontWeight.w400,
-); final TextStyle cardText500 = GoogleFonts.poppins(
+);
+final TextStyle cardText500 = GoogleFonts.poppins(
   color: ColorDilTravel.white,
   fontWeight: FontWeight.w500,
 );
-
 final TextStyle buttonText = GoogleFonts.poppins(
   color: ColorDilTravel.white,
   fontWeight: FontWeight.w400,
