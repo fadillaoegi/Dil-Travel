@@ -16,7 +16,7 @@ class MainApp extends StatefulWidget {
   State<MainApp> createState() => _MainAppState();
 }
 
-class _MainAppState extends State<MainApp>{
+class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +24,7 @@ class _MainAppState extends State<MainApp>{
       // home: Scaffold(
       //   body: Splash(),
       // ),
-      initialRoute: DilTravelRoute.bonus,
+      initialRoute: DilTravelRoute.home,
       routes: {
         DilTravelRoute.splash: (context) => const Splash(),
         DilTravelRoute.getstart: (context) => const GetStart(),
