@@ -21,9 +21,6 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: Scaffold(
-      //   body: Splash(),
-      // ),
       initialRoute: DilTravelRoute.home,
       routes: {
         DilTravelRoute.splash: (context) => const Splash(),
