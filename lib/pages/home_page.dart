@@ -24,6 +24,19 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+// WIDGET NAME USER
+  Widget nameUser() {
+    return SizedBox(
+      width: 250.0,
+      child: Text(
+        "Howdy,\nKezia Anne",
+        overflow: TextOverflow.ellipsis,
+        style:
+            tittleText.copyWith(fontSize: 24.0, color: ColorDilTravel.primary),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,21 +50,8 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SizedBox(
-                    width: 250.0,
-                    child: Text(
-                      "Howdy,\nKezia Anne",
-                      overflow: TextOverflow.ellipsis,
-                      style: tittleText.copyWith(
-                          fontSize: 24.0, color: ColorDilTravel.primary),
-                    ),
-                  ),
+                  nameUser(),
                   photoProfile(),
-                  // Container(
-                  //   child: Text(
-                  //     "AAWWW",
-                  //   ),
-                  // ),
                 ],
               ),
               const SizedBox(
@@ -68,14 +68,33 @@ class _HomePageState extends State<HomePage> {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: const [
-                    Casrousel(),
-                    Casrousel(),
-                    Casrousel(),
-                    Casrousel(),
+                  children: [
+                    Carousel(
+                        image: "assets/img/image_destination1.png",
+                        city: "Kendari",
+                        name: "KendariHotel"),
+                    Carousel(
+                        image: "assets/img/image_destination1.png",
+                        city: "Tegal",
+                        name: "TegalHotel"),
+                    Carousel(
+                        image: "assets/img/image_destination1.png",
+                        city: "Semarang",
+                        name: "CleoHotel"),
+                    Carousel(
+                        image: "assets/img/image_destination1.png",
+                        city: "Surabaya",
+                        name: "SurabayaHotel"),
                   ],
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 30.0,
+              ),
+              Text("New This Year",
+                  style: tittleText.copyWith(
+                    fontSize: 18.0,
+                  )),
             ],
           ),
         ),
