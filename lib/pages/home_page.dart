@@ -134,42 +134,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-          child: Container(
-        margin: const EdgeInsets.all(10.0),
-        decoration: BoxDecoration(
-            color: ColorDilTravel.black.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(20.0)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.home,
-                  color: ColorDilTravel.primary,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.book,
-                  color: ColorDilTravel.primary,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.credit_card,
-                  color: ColorDilTravel.primary,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.settings,
-                  color: ColorDilTravel.primary,
-                )),
-          ],
-        ),
-      )),
     );
   }
 }

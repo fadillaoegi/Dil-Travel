@@ -9,4 +9,6 @@ class DilTravelRoute {
   static String detail = "$root/detail";
   static String chooseseat = "$root/chooseseat";
   static String checkout = "$root/checkout";
+  static String mainpages = "$root/mainpages";
+  static String voidpages = "$root/voidpages";
 }
