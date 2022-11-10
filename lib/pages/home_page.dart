@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
     return SizedBox(
       width: 250.0,
       child: Text(
-        "Howdy,\nKezia Anne",
+        "Hello,\nShofa Nabila Alifa",
         overflow: TextOverflow.ellipsis,
         style:
             tittleText.copyWith(fontSize: 24.0, color: ColorDilTravel.primary),
@@ -70,19 +70,23 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Carousel(
-                        image: "assets/img/image_destination1.png",
-                        city: "Kendari",
-                        name: "KendariHotel"),
+                      image: "assets/img/image_destination1.png",
+                      city: "Kendari",
+                      name: "KendariHotel",
+                      onTap: () {
+                        print("Sudah");
+                      },
+                    ),
                     Carousel(
-                        image: "assets/img/image_destination1.png",
+                        image: "assets/img/image_destination2.png",
                         city: "Tegal",
                         name: "TegalHotel"),
                     Carousel(
-                        image: "assets/img/image_destination1.png",
+                        image: "assets/img/image_destination3.png",
                         city: "Semarang",
                         name: "CleoHotel"),
                     Carousel(
-                        image: "assets/img/image_destination1.png",
+                        image: "assets/img/image_destination4.png",
                         city: "Surabaya",
                         name: "SurabayaHotel"),
                   ],
@@ -95,6 +99,9 @@ class _HomePageState extends State<HomePage> {
                   style: tittleText.copyWith(
                     fontSize: 18.0,
                   )),
+              const SizedBox(
+                height: 16.0,
+              ),
             ],
           ),
         ),

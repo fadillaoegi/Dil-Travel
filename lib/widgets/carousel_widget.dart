@@ -9,16 +9,18 @@ class Carousel extends StatelessWidget {
     this.city,
     this.image,
     this.name,
+    this.onTap,
   });
 
   String? image;
   String? name;
   String? city;
+  VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         width: 200.0,
         height: 323.0,
@@ -39,7 +41,7 @@ class Carousel extends StatelessWidget {
               child: Align(
                 alignment: Alignment.topRight,
                 child: Container(
-                  width: 54.5,
+                  width: 64.5,
                   height: 30.0,
                   padding: const EdgeInsets.all(6.0),
                   decoration: const BoxDecoration(
@@ -47,7 +49,14 @@ class Carousel extends StatelessWidget {
                       borderRadius:
                           BorderRadius.only(bottomLeft: Radius.circular(10.0))),
                   child: Row(
-                    children: [],
+                    children: [
+                      Image.asset(
+                        "assets/img/icon_star.png",
+                        height: 24.0,
+                        width: 24.0,
+                      ),
+                      Text("4.5", style: tittleText.copyWith(fontSize: 14.0))
+                    ],
                   ),
                 ),
               ),
