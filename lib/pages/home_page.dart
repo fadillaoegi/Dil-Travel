@@ -1,6 +1,7 @@
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/carousel_widget.dart';
+import 'package:diltravel/widgets/listyear_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -102,15 +103,73 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 16.0,
               ),
+              ListNewYear(
+                onTap: () {
+                  print("Clicked");
+                },
+                image: "assets/img/image_photo1.png",
+                name: "Danau Beratan",
+                city: "Singajara",
+                rating: "4.7",
+              ),
+              ListNewYear(
+                onTap: () {
+                  print("Clicked");
+                },
+                image: "assets/img/image_photo2.png",
+                name: "Kebun Binatang",
+                city: "Surabaya",
+                rating: "4.3",
+              ),
+              ListNewYear(
+                onTap: () {
+                  print("Clicked");
+                },
+                image: "assets/img/image_photo3.png",
+                name: "Candi Borobudur",
+                city: "Yogyajarta",
+                rating: "4.0",
+              ),
             ],
           ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-          color: ColorDilTravel.black,
-          child: Row(
-            children: const [Text("data")],
-          )),
+          child: Container(
+        margin: const EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+            color: ColorDilTravel.black.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(20.0)),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.home,
+                  color: ColorDilTravel.primary,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.book,
+                  color: ColorDilTravel.primary,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.credit_card,
+                  color: ColorDilTravel.primary,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.settings,
+                  color: ColorDilTravel.primary,
+                )),
+          ],
+        ),
+      )),
     );
   }
 }

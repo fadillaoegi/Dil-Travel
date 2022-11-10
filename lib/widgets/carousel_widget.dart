@@ -22,6 +22,7 @@ class Carousel extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        margin: const EdgeInsets.only(right: 10.0, left: 10.0),
         width: 200.0,
         height: 323.0,
         padding: const EdgeInsets.all(10.0),
