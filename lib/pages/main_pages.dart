@@ -1,5 +1,7 @@
+import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/void_page.dart';
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +25,7 @@ class _MainPagesState extends State<MainPages> {
     // PAGES
     final List<Widget> pages = [
       const HomePage(),
-      const VoidPage(),
+      const DetailPage(),
       const VoidPage(),
       const VoidPage(),
     ];

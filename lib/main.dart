@@ -1,4 +1,5 @@
 import 'package:diltravel/pages/bonus_saldo_page.dart';
+import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/get_start_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/main_pages.dart';
@@ -23,6 +24,7 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // home: const DetailPage(),
       initialRoute: DilTravelRoute.mainpages,
       routes: {
         DilTravelRoute.mainpages: (context) => const MainPages(),
@@ -33,6 +35,7 @@ class _MainAppState extends State<MainApp> {
         DilTravelRoute.signup: (context) => const SignupPage(),
         DilTravelRoute.bonus: (context) => const BonusPage(),
         DilTravelRoute.voidpages: (context) => const VoidPage(),
+        DilTravelRoute.detail: (context) => const DetailPage(),
       },
     );
   }
