@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/carousel_widget.dart';
@@ -76,12 +77,14 @@ class _HomePageState extends State<HomePage> {
                       name: "KendariHotel",
                       onTap: () {
                         print("Sudah");
+                        Navigator.pushNamed(context, DilTravelRoute.detail);
                       },
                     ),
                     Carousel(
-                        image: "assets/img/image_destination2.png",
-                        city: "Tegal",
-                        name: "TegalHotel"),
+                      image: "assets/img/image_destination2.png",
+                      city: "Tegal",
+                      name: "TegalHotel",
+                    ),
                     Carousel(
                         image: "assets/img/image_destination3.png",
                         city: "Semarang",

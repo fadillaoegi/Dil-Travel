@@ -1,7 +1,6 @@
-import 'dart:ffi';
-
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
+import 'package:diltravel/widgets/button_widget.dart';
 import 'package:diltravel/widgets/interest_widget.dart';
 import 'package:diltravel/widgets/photos_detail.dart';
 import 'package:flutter/material.dart';
@@ -109,7 +108,7 @@ class _DetailPageState extends State<DetailPage> {
             height: 20.0,
           ),
           Container(
-            height: 446.0,
+            height: 420.0,
             width: 347,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
@@ -128,9 +127,9 @@ class _DetailPageState extends State<DetailPage> {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  const Text(
+                  Text(
                     "Berada di jalur jalan provinsi yang menghubungkan DenpasarSingaraja serta letaknya yang dekat dengan Kebun Raya Eka Karya menjadikan tempat Bali.",
-                    style: TextStyle(fontSize: 14.0),
+                    style: subText.copyWith(fontSize: 14.0),
                   ),
                   const SizedBox(
                     height: 20.0,
@@ -190,11 +189,44 @@ class _DetailPageState extends State<DetailPage> {
                     Interest(
                       text: "Central Mall",
                     ),
-                  ])
+                  ]),
                 ],
               ),
             ),
           ),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.only(
+              left: 50.0,
+              right: 50.0,
+              bottom: 50.0,
+              // top: 20.0,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "IDR 2.500.000",
+                      style: tittleText.copyWith(fontSize: 18.0),
+                    ),
+                    Text(
+                      "per orang",
+                      style: descText.copyWith(fontSize: 14.0),
+                    ),
+                  ],
+                ),
+                ButtonDefault(
+                  radius: 10.0,
+                  height: 55.0,
+                  width: 170.0,
+                  text: "Book Now",
+                )
+              ],
+            ),
+          )
         ],
       ),
     );

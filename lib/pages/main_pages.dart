@@ -4,7 +4,6 @@ import 'package:diltravel/pages/void_page.dart';
 import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:flutter/material.dart';
-
 class MainPages extends StatefulWidget {
   const MainPages({super.key});
 
@@ -25,7 +24,7 @@ class _MainPagesState extends State<MainPages> {
     // PAGES
     final List<Widget> pages = [
       const HomePage(),
-      const DetailPage(),
+      const VoidPage(),
       const VoidPage(),
       const VoidPage(),
     ];
