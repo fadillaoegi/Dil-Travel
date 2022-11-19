@@ -7,8 +7,8 @@ class DilTravelRoute {
   static String success = "$root/success";
   static String bonus = "$root/bonus";
   static String detail = "$root/detail";
-  static String chooseseat = "$root/chooseseat";
   static String checkout = "$root/checkout";
   static String mainpages = "$root/mainpages";
   static String voidpages = "$root/voidpages";
+  static String seatchoose = "$root/seatchoose";
 }

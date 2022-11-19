@@ -1,3 +1,4 @@
+import 'package:diltravel/pages/chose_seat_page.dart';
 import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/void_page.dart';
@@ -25,7 +26,7 @@ class _MainPagesState extends State<MainPages> {
     final List<Widget> pages = [
       const HomePage(),
       const VoidPage(),
-      const VoidPage(),
+      const ChoseSheat(),
       const VoidPage(),
     ];
 // BOTTOM NAVIGATION BAR

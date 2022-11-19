@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
@@ -10,18 +11,20 @@ class ButtonDefault extends StatelessWidget {
     this.radius,
     this.text,
     this.width = 327.0,
+    this.onpress,
   }) : super(key: key);
   String? text;
   double? radius;
   double? height;
   double? width;
+  VoidCallback? onpress;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: height,
       width: width,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onpress,
         style: ElevatedButton.styleFrom(
           primary: ColorDilTravel.primary,
           shape:

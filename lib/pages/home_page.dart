@@ -75,10 +75,10 @@ class _HomePageState extends State<HomePage> {
                       image: "assets/img/image_destination1.png",
                       city: "Kendari",
                       name: "KendariHotel",
-                      onTap: () {
-                        print("Sudah");
-                        Navigator.pushNamed(context, DilTravelRoute.detail);
-                      },
+                      // onTap: () {
+                      //   print("Sudah");
+                      //   Navigator.pushNamed(context, DilTravelRoute.detail);
+                      // },
                     ),
                     Carousel(
                       image: "assets/img/image_destination2.png",
@@ -107,27 +107,27 @@ class _HomePageState extends State<HomePage> {
                 height: 16.0,
               ),
               ListNewYear(
-                onTap: () {
-                  print("Clicked");
-                },
+                // onTap: () {
+                //   print("Clicked");
+                // },
                 image: "assets/img/image_photo1.png",
                 name: "Danau Beratan",
                 city: "Singajara",
                 rating: "4.7",
               ),
               ListNewYear(
-                onTap: () {
-                  print("Clicked");
-                },
+                // onTap: () {
+                //   print("Clicked");
+                // },
                 image: "assets/img/image_photo2.png",
                 name: "Kebun Binatang",
                 city: "Surabaya",
                 rating: "4.3",
               ),
               ListNewYear(
-                onTap: () {
-                  print("Clicked");
-                },
+                // onTap: () {
+                //   print("Clicked");
+                // },
                 image: "assets/img/image_photo3.png",
                 name: "Candi Borobudur",
                 city: "Yogyajarta",

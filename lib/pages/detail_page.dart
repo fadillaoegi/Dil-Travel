@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/button_widget.dart';
@@ -18,9 +19,11 @@ class _DetailPageState extends State<DetailPage> {
       height: 450.0,
       width: double.infinity,
       decoration: const BoxDecoration(
-          image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage("assets/img/image_destination1.png"))),
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage("assets/img/image_destination1.png"),
+        ),
+      ),
     );
   }
 
@@ -223,6 +226,9 @@ class _DetailPageState extends State<DetailPage> {
                   height: 55.0,
                   width: 170.0,
                   text: "Book Now",
+                  onpress: () {
+                    Navigator.pushNamed(context, DilTravelRoute.seatchoose);
+                  },
                 )
               ],
             ),

@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
@@ -9,18 +10,20 @@ class Carousel extends StatelessWidget {
     this.city,
     this.image,
     this.name,
-    this.onTap,
+    // this.onTap,
   });
 
   String? image;
   String? name;
   String? city;
-  VoidCallback? onTap;
+  // VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {
+        Navigator.pushNamed(context, DilTravelRoute.detail);
+      },
       child: Container(
         margin: const EdgeInsets.only(right: 10.0, left: 10.0),
         width: 200.0,

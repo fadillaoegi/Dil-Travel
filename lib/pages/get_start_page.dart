@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,9 @@ class GetStart extends StatelessWidget {
                     text: "Get Started",
                     width: 220.0,
                     height: 55.0,
+                    onpress: (() {
+                      Navigator.pushNamed(context, DilTravelRoute.mainpages);
+                    }),
                   )
                 ],
               ),

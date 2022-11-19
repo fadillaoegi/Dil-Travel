@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
@@ -10,18 +11,20 @@ class ListNewYear extends StatelessWidget {
     this.image,
     this.name,
     this.rating,
-    this.onTap,
+    // this.onTap,
   });
   String? image;
   String? name;
   String? city;
   String? rating;
-  VoidCallback? onTap;
+  // VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: () {
+        Navigator.pushNamed(context, DilTravelRoute.detail);
+      },
       child: Container(
         height: 90.0,
         width: 327.0,
