@@ -5,6 +5,7 @@ import 'package:diltravel/pages/void_page.dart';
 import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:flutter/material.dart';
+
 class MainPages extends StatefulWidget {
   const MainPages({super.key});
 
@@ -26,7 +27,7 @@ class _MainPagesState extends State<MainPages> {
     final List<Widget> pages = [
       const HomePage(),
       const VoidPage(),
-      const ChoseSheat(),
+      const VoidPage(),
       const VoidPage(),
     ];
 // BOTTOM NAVIGATION BAR

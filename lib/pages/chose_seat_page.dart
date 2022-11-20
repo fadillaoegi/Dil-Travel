@@ -244,6 +244,43 @@ class _ChoseSheatState extends State<ChoseSheat> {
               ],
             ),
           ),
+
+          // NOTE: Seat Terpilih
+          Container(
+            margin: const EdgeInsets.only(top: 20.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Your Seat",
+                  style: descText.copyWith(fontSize: 16.0),
+                ),
+                Text(
+                  "A3, A4",
+                  style: tittleText.copyWith(
+                      fontSize: 16.0, color: ColorDilTravel.primary),
+                ),
+              ],
+            ),
+          ),
+          // NOTE: Total Harga
+          Container(
+            margin: const EdgeInsets.only(top: 10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Total",
+                  style: descText.copyWith(fontSize: 16.0),
+                ),
+                Text(
+                  "IDR 540.000.000",
+                  style: tittleText.copyWith(
+                      fontSize: 16.0, color: ColorDilTravel.primary),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
@@ -259,7 +296,7 @@ class _ChoseSheatState extends State<ChoseSheat> {
         height: 55,
         width: double.infinity,
         onpress: (() {
-          print("Belum Ada Navigation");
+          Navigator.pushNamed(context, DilTravelRoute.checkout);
         }),
       ),
     );

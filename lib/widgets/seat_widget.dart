@@ -64,7 +64,7 @@ class SeatItem extends StatelessWidget {
           decoration: BoxDecoration(
             color: backgroundSeat(),
             borderRadius: BorderRadius.circular(15.0),
-            border: Border.all(color: border()),
+            border: Border.all(color: border(), width: 2.0),
           ),
           child: child(),
         ),

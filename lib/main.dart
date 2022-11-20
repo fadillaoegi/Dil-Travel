@@ -1,4 +1,5 @@
 import 'package:diltravel/pages/bonus_saldo_page.dart';
+import 'package:diltravel/pages/checkout_page.dart';
 import 'package:diltravel/pages/chose_seat_page.dart';
 import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/get_start_page.dart';
@@ -26,7 +27,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const DetailPage(),
-      initialRoute: DilTravelRoute.splash,
+      initialRoute: DilTravelRoute.checkout,
       routes: {
         DilTravelRoute.mainpages: (context) => const MainPages(),
         DilTravelRoute.splash: (context) => const Splash(),
@@ -38,6 +39,7 @@ class _MainAppState extends State<MainApp> {
         DilTravelRoute.voidpages: (context) => const VoidPage(),
         DilTravelRoute.detail: (context) => const DetailPage(),
         DilTravelRoute.seatchoose: (context) => const ChoseSheat(),
+        DilTravelRoute.checkout: (context) => const CheckOut(),
       },
     );
   }
