@@ -130,27 +130,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  height: 48.0,
-                  width: 48.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/img/icon_available.png"),
-                    ),
-                  ),
+                SeatItem(
+                  statusSeat: 1,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_selected.png",
+                  statusSeat: 1,
                 ),
                 SeatItemAlfabet(
                   text: "1",
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 0,
                 ),
               ],
             ),
@@ -161,27 +154,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  height: 48.0,
-                  width: 48.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/img/icon_available.png"),
-                    ),
-                  ),
+                SeatItem(
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_selected.png",
+                  statusSeat: 2,
                 ),
                 SeatItemAlfabet(
                   text: "2",
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 2,
                 ),
               ],
             ),
@@ -192,27 +178,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  height: 48.0,
-                  width: 48.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/img/icon_available.png"),
-                    ),
-                  ),
+                SeatItem(
+                  statusSeat: 1,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_selected.png",
+                  statusSeat: 2,
                 ),
                 SeatItemAlfabet(
                   text: "3",
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 0,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 0,
                 ),
               ],
             ),
@@ -223,27 +202,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  height: 48.0,
-                  width: 48.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/img/icon_available.png"),
-                    ),
-                  ),
+                SeatItem(
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_selected.png",
+                  statusSeat: 2,
                 ),
                 SeatItemAlfabet(
                   text: "4",
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 2,
                 ),
               ],
             ),
@@ -254,27 +226,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  height: 48.0,
-                  width: 48.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8.0),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/img/icon_available.png"),
-                    ),
-                  ),
+                SeatItem(
+                  statusSeat: 2,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_selected.png",
+                  statusSeat: 2,
                 ),
                 SeatItemAlfabet(
                   text: "5",
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 0,
                 ),
                 SeatItem(
-                  image: "assets/img/icon_unavailable.png",
+                  statusSeat: 0,
                 ),
               ],
             ),
@@ -285,6 +250,20 @@ class _ChoseSheatState extends State<ChoseSheat> {
   }
 
   // NOTE: SECTION 4
+  Widget button() {
+    return Container(
+      margin: const EdgeInsets.only(top: 30.0),
+      child: ButtonDefault(
+        text: "Continue to Checkout",
+        radius: 17.0,
+        height: 55,
+        width: double.infinity,
+        onpress: (() {
+          print("Belum Ada Navigation");
+        }),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -298,18 +277,7 @@ class _ChoseSheatState extends State<ChoseSheat> {
             tittle(),
             infoSeat(),
             selectSeat(),
-            Container(
-              margin: const EdgeInsets.only(top: 30.0),
-              child: ButtonDefault(
-                text: "Continue to Checkout",
-                radius: 17.0,
-                height: 55,
-                width: double.infinity,
-                onpress: (() {
-                  print("Belum Ada Navigation");
-                }),
-              ),
-            )
+            button(),
           ],
         ),
       ),
