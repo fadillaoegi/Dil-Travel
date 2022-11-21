@@ -1,3 +1,4 @@
+import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/button_widget.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +38,10 @@ class SuccessCheckout extends StatelessWidget {
               ),
               ButtonDefault(
                 text: "My Bookings",
+                onpress: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, DilTravelRoute.mainpages, (route) => false);
+                },
               )
             ],
           ),

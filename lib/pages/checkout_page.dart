@@ -1,6 +1,7 @@
 import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
+import 'package:diltravel/widgets/booking_item_widget.dart';
 import 'package:diltravel/widgets/button_widget.dart';
 import 'package:diltravel/widgets/interest_widget.dart';
 import 'package:diltravel/widgets/listyear_widget.dart';
@@ -100,7 +101,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Traveler"),
+                  BookingItem(text: "Traveler"),
                   Text(
                     "2 person",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -112,7 +113,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Seat"),
+                  BookingItem(text: "Seat"),
                   Text(
                     "A3, B3",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -124,7 +125,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Insurance"),
+                  BookingItem(text: "Insurance"),
                   Text(
                     "YES",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -136,7 +137,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Refundable"),
+                  BookingItem(text: "Refundable"),
                   Text(
                     "NO",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -148,7 +149,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "VAT"),
+                  BookingItem(text: "VAT"),
                   Text(
                     "45%",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -160,7 +161,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Price"),
+                  BookingItem(text: "Price"),
                   Text(
                     "IDR 8.500.690",
                     style: tittleText.copyWith(fontSize: 14.0),
@@ -172,7 +173,7 @@ class CheckOut extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 16.0),
               child: Row(
                 children: [
-                  Interest(text: "Grand Total"),
+                  BookingItem(text: "Grand Total"),
                   Text(
                     "IDR 12.000.000",
                     style: tittleText.copyWith(fontSize: 14.0),

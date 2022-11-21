@@ -27,7 +27,7 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: const DetailPage(),
-      initialRoute: DilTravelRoute.checkout,
+      initialRoute: DilTravelRoute.splash,
       routes: {
         DilTravelRoute.mainpages: (context) => const MainPages(),
         DilTravelRoute.splash: (context) => const Splash(),
