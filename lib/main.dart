@@ -12,10 +12,15 @@ import 'package:diltravel/pages/splash.dart';
 import 'package:diltravel/pages/success_checkout_page.dart';
 import 'package:diltravel/pages/void_page.dart';
 import 'package:diltravel/routes/routes.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() => runApp(const MainApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MainApp());
+}
 
 class MainApp extends StatefulWidget {
   const MainApp({Key? key}) : super(key: key);
