@@ -11,4 +11,5 @@ class DilTravelRoute {
   static String mainpages = "$root/mainpages";
   static String voidpages = "$root/voidpages";
   static String seatchoose = "$root/seatchoose";
+  static String ujiCoba = "$root/ujiCoba";
 }

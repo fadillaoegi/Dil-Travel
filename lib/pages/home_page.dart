@@ -133,6 +133,9 @@ class _HomePageState extends State<HomePage> {
                 city: "Yogyajarta",
                 rating: "4.0",
               ),
+              const SizedBox(
+                height: 60.0,
+              )
             ],
           ),
         ),
