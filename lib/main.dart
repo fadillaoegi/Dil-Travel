@@ -6,7 +6,7 @@ import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/get_start_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/main_bloc_page.dart';
-import 'package:diltravel/pages/main_pages.dart';
+// import 'package:diltravel/pages/main_pages.dart';
 import 'package:diltravel/pages/signup_page.dart';
 import 'package:diltravel/pages/splash.dart';
 import 'package:diltravel/pages/success_checkout_page.dart';
@@ -39,7 +39,7 @@ class _MainAppState extends State<MainApp> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         // home: const DetailPage(),
-        initialRoute: DilTravelRoute.mainpages,
+        initialRoute: DilTravelRoute.splash,
         routes: {
           DilTravelRoute.mainpages: (context) => const MainBlocPage(),
           DilTravelRoute.splash: (context) => const Splash(),

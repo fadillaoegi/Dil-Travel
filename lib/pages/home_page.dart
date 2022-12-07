@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 30.0),
+          margin: const EdgeInsets.only(top: 30.0, left: 24.0, right: 24.0),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: ListView(
