@@ -8,3 +8,4 @@ abstract class AuthState extends Equatable {
 }
 
 class AuthInitial extends AuthState {}
+// 
