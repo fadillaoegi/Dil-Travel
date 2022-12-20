@@ -39,14 +39,19 @@ class _SignInScreenState extends State<SignInScreen> {
                           children: [
                             ButtonDefault(text: "Sign In"),
                             const SizedBox(height: 50.0),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                "Terms and Conditions",
-                                style: descText.copyWith(
-                                  fontSize: 18.0,
+                            Row(
+                              children: [
+                                Text("Belum punya akun? "),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Sign Up",
+                                    style: descText.copyWith(
+                                      fontSize: 18.0,
+                                    ),
+                                  ),
                                 ),
-                              ),
+                              ],
                             ),
                           ],
                         ),
