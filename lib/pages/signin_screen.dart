@@ -32,7 +32,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         style: tittleText.copyWith(fontSize: 24.0),
                       ),
                       FormDefault(text: "Email Address"),
-                      FormDefault(text: "Password"),
+                      FormDefault(text: "Passwordd"),
                       const SizedBox(height: 40.0),
                       Center(
                         child: Column(
