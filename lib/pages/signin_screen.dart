@@ -28,7 +28,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Join us and get\nyour next journeyy",
+                        "Join us and get\nyour next journeysy",
                         style: tittleText.copyWith(fontSize: 24.0),
                       ),
                       FormDefault(text: "Email Address"),
