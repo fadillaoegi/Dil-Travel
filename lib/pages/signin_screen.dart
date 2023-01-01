@@ -41,7 +41,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             const SizedBox(height: 50.0),
                             Row(
                               children: [
-                                Text("Belum punya akun? "),
+                                const Text("Belum punya akun? "),
                                 TextButton(
                                   onPressed: () {},
                                   child: Text(
