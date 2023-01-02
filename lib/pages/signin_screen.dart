@@ -37,7 +37,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       Center(
                         child: Column(
                           children: [
-                            ButtonDefault(text: "Sign In"),
+                            ButtonDefault(text: "Sign Inn"),
                             const SizedBox(height: 50.0),
                             Row(
                               children: [
