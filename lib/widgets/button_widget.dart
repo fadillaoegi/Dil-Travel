@@ -1,4 +1,3 @@
-import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +25,7 @@ class ButtonDefault extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onpress,
         style: ElevatedButton.styleFrom(
-          primary: ColorDilTravel.primary,
+          backgroundColor: ColorDilTravel.primary,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         ),

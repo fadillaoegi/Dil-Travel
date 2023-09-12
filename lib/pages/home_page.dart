@@ -1,4 +1,3 @@
-import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/carousel_widget.dart';

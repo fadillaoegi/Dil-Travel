@@ -11,10 +11,10 @@ class VoidPage extends StatelessWidget {
         color: ColorDilTravel.black,
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Center(
+        child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 "Void Page",
                 style: TextStyle(

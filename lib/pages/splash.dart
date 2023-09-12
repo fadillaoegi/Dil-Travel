@@ -11,11 +11,13 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+  @override
   void initState() {
     super.initState();
     SplashStart();
   }
 
+  // ignore: non_constant_identifier_names
   SplashStart() async {
     var durasiSplash = const Duration(seconds: 4);
 

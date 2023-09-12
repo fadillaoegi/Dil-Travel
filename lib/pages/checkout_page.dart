@@ -3,7 +3,6 @@ import 'package:diltravel/styles/colors.dart';
 import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/booking_item_widget.dart';
 import 'package:diltravel/widgets/button_widget.dart';
-import 'package:diltravel/widgets/interest_widget.dart';
 import 'package:diltravel/widgets/listyear_widget.dart';
 import 'package:flutter/material.dart';
 

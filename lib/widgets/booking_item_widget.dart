@@ -1,6 +1,7 @@
 import 'package:diltravel/styles/text_style.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class BookingItem extends StatelessWidget {
   String? text;
   BookingItem({super.key, this.text});

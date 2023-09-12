@@ -1,8 +1,5 @@
-import 'package:diltravel/pages/chose_seat_page.dart';
-import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/void_page.dart';
-import 'package:diltravel/routes/routes.dart';
 import 'package:diltravel/styles/colors.dart';
 import 'package:flutter/material.dart';
 

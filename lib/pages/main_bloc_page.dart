@@ -2,7 +2,6 @@ import 'package:diltravel/cubit/page_cubit.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/void_page.dart';
 import 'package:diltravel/styles/colors.dart';
-import 'package:diltravel/styles/text_style.dart';
 import 'package:diltravel/widgets/nav_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -74,6 +73,7 @@ class _MainBlocPageState extends State<MainBlocPage> {
 
     return BlocBuilder<PageCubit, int>(
       builder: (context, currentIndex) {
+        // ignore: avoid_print
         print("object");
         return Scaffold(
           body: Stack(children: [

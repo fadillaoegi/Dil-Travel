@@ -103,7 +103,7 @@ class _ChoseSheatState extends State<ChoseSheat> {
               SeatItemAlfabet(
                 text: "B",
               ),
-              Container(
+              SizedBox(
                 height: 48.0,
                 width: 48.0,
                 child: Center(
