@@ -6,7 +6,6 @@ import 'package:diltravel/pages/detail_page.dart';
 import 'package:diltravel/pages/get_start_page.dart';
 import 'package:diltravel/pages/home_page.dart';
 import 'package:diltravel/pages/main_bloc_page.dart';
-// import 'package:diltravel/pages/main_pages.dart';
 import 'package:diltravel/pages/signup_page.dart';
 import 'package:diltravel/pages/splash.dart';
 import 'package:diltravel/pages/success_checkout_page.dart';
